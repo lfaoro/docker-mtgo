@@ -1,10 +1,10 @@
-name: Build and Push Docker Image
-
+name: build/push image to GH
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:  
 
 jobs:
   build:
