@@ -32,6 +32,6 @@ jobs:
         push: ${{ github.event_name != 'pull_request' }}
         tags: |
           ghcr.io/${{ github.repository_owner }}/docker-mtgo:latest
-          type=sha
+          type=ref,event=tag
         provenance: false
         sbom: false
